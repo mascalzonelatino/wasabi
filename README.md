@@ -18,7 +18,7 @@ a directory 'input folder':
 
 This will create an mp3 folder with the audio files created by 
 Wasabi and an mp4 folder with the original mp4 files, both as 
-sub-folders of <input folder>.
+sub-folders of input_folder .
 
 Platforms
 --------------
