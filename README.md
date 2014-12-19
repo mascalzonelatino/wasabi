@@ -17,7 +17,8 @@ a directory 'input folder':
 	python wasabi.py <input folder>
 
 This will create an mp3 folder with the audio files created by 
-Wasabi and an mp4 folder with the original mp4 files. 
+Wasabi and an mp4 folder with the original mp4 files, both as 
+sub-folders of <input folder>.
 
 Platforms
 --------------
