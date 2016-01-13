@@ -1,10 +1,10 @@
 wasabi
 ======
 
-Wasabi is a Python command line utility that extracts MP3 audio tracks
+Python command line utility that extracts MP3 audio tracks
 from MP4 video files downloaded from the Internet. 
 
-It relies on the following 3rd party programs: 
+It relies on the following 3rd party packages: 
 
 - ffmpeg http://ffmpeg.org 
 - lame http://lame.sourceforge.net 
@@ -22,10 +22,9 @@ sub-folders of input_folder .
 
 Platforms
 --------------
-Currently Wasabi runs on Linux distributions only.
+* GNU/Linux 
+* MAC OS X 
 
 Contributors
 --------------
 * Salvatore Rinaldo - Wrote the initial version. 
- 
-
