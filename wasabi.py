@@ -4,24 +4,25 @@ import os
 import glob 
 import subprocess
 import argparse
-import sys
+import shutil
 
 parser = argparse.ArgumentParser()
 parser.add_argument("dir", help = "Input directory")
 
 args = parser.parse_args()
 
-def convert2wav(inputfile):
+def convert2wav(inputfile,logdir='log'):
+	if not os.path.exists(logdir):
+		os.mkdir(logdir)
 	extension = os.path.splitext(inputfile)[1]
 	if os.path.exists(inputfile.replace(extension,'.wav',1)) == False:
 		subprocess.call(['ffmpeg', '-i', inputfile, inputfile.replace(extension,'.wav',1)])
+		
+	shutil.move(inputfile,logdir)
 
 # Make the output directories if they don't exist already 
 if not os.path.exists("mp3"):
 	os.mkdir("mp3")
-
-if not os.path.exists("log"):
-	os.mkdir("log")
 
 if os.path.exists(args.dir):
 	os.chdir(args.dir) 
